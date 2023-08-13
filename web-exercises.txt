@@ -1,0 +1,41 @@
+What is HTTP?
+it's the protocols or ways of communication for the web. it is the way the browsers and servers communicate - http is the non secure version where as https is the secure version. 
+
+What is a URL?
+it's a combination of all the various compnonents needed for the server to return the correct IP address. 
+
+What is DNS?
+it's the system that stores and converts the URLs into IP addresses to reach the site you requested
+
+What is a query string?
+it is the additional variables that are contain extra info such as search terms, form information and others.
+
+What are two HTTP verbs and how are they different?
+GET is a way to retrieve some data off of a server using a URL or search form
+POST is sending informatino to the server and can change the data that is stored there.
+
+What is an HTTP request?
+when you are trying to get a specific website from the server using GET, can have additional information in headers
+
+What is an HTTP response?
+it's information from the server that follows a certain protocol
+
+What is an HTTP header? Give a couple of examples of request and response headers you have seen.
+a header is additional information provided for specific requests or response. Some types for requests are cookies, cahce control, and Accept. For responses the headers can be content-type, dates/times of the last time the page was modified
+
+What are the processes that happen when you type "http://somesite.com/some/page.html" into a browser?
+reaching the http protocol, port type being 80 due to it being an http, checking server for somesite.com and turning it into a unique ip address using DNS, checking the resource of /some/page.html and verifying it, converting that page to HTML and what ever other resources that may be included(css, js, etc)
+
+Part 2
+
+using curl, make GET request to the icanhazdadjoke.com API to find all jokes inlvolving the word "pirate"
+curl -v https://icanhazdadjoke.com/search?term=pirate
+
+use dig to find what the IP address is for icanhazdadjoke.com
+
+icanhazdadjoke.com.	256	IN	A	104.21.66.15
+icanhazdadjoke.com.	256	IN	A	172.67.198.173
+
+Make a simple web page and serve it using python3 -m httpserver. Visit the page in a browser.
+
+Part 3
